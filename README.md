@@ -1,85 +1,49 @@
-# Session 1 : Concepts de bases React
+# Partie 0 : Configuration
+## Mise en place de la base du code
+- Choisir un de vos projets (cf. TDs précédents) comme base de code
+- Une fois sélectionné, copier les fichiers du projet React (sans le cache .git ou le README du précédent TD) et coller les dans ce dossier
+  > Attention, faire en sorte que vos fichiers soient à la racine de ce repository
+- S'assurer que le projet fonctionne correctement
+  > Vous pouvez reprendre des fonctionnalités intéressantes dans chacun de vos projets
 
-## TD00 : Créer et initialiser un projet React 
-1. Installer NodeJS
-2. Créer un projet React en utilisant `Vite`
-```
-npm create vite@latest
-```
-3. Exécuter le projet
-```
-npm run dev
-```
-4. Essayer de modifier le contenu du fichier App.jsx puis enregistrer le fichier, vérifier que votre changement s'affiche instantannément dans le navigateur (pas besoin de recharger la page)
-5. Remplacer le contenu du fichier index.ccs par celui inclut dans ce repository
-6. Créer un commit avec le message "TD00 : Initialisation du projet"
-7. Push
+## Renseigner les membres du groupe
+- Ajouter un fichier CONTRIBUTORS.md à la racine du dossier, puis y ajouter une section Contributors dans laquelle vous spécifierez le nom des membres du groupe.
+  > Utiliser les bullets points afin de renseigner un étudiant par ligne, l'ordre d'apparition des noms n'a pas d'importance
 
+## Faire un premier pull request
+- Commiter et pusher les derniers changements
+- Faire une Pull Request (PR) et demander aux autres membres de réviser, valider puis merger
+- Les autres membres du groupe pull le repository
 
-## TD01 : Votre premier composant React 
-1. Créer un composant Header contenant les éléments suivant :
-  - Logo de votre formation
-  - Titre : "Introduction à React"
-  - Sous-Titre : "A la découverte des premières notions de React"
-2. Commit avec le message "TD01 : Ajouter un composant Header dans la page"
-3. Créer un second composant MainContent, permettant d'afficher le text suivant "Ici, nous afficherons des informations interessantes :) "
-3. Commit avec le message "TD01 : Ajouter un composant pour le contenu principal de la page"
-4. Ajouter un composant Footer contenant le texte "Tous droits réservés - [Nom] [Prénom]" - Le texte doit s'afficher tout en bas de la page et centré au millieu
-5. Commit avec le message "TD01 : Ajouter un footer"
-6. Push 
+# Partie 1: Edition de données 
+Dans cette section, vous allez ajouter des opérations d'éditions sur les données de votre application. Plus particulièrement, vous allez ajouter, éditer et supprimer des données. 
+## Fonctionnalités obligatoires
+- Ajouter/Editer/Supprimer un étudiant
+- Ajouter/Editer/Supprimer un cours
+- Ajouter/Editer/Supprimer une note
 
+## Bonus
+> Plus vous en faites, plus vous gagnez des points bonus :)
+- Module statistiques (notes moyennes, nombre d'étudiants, moyennes par cours, classement des étudiants, ...)
+- Télécharger les données en csv
+- Contrôle de sécurité (inventer une règle quelconque pour que toute le monde ne puisse pas éditer certaines données par exemple)
 
-## TD02 : Contenu dynamique 
-1. Modifier le composant MainContent du TD précédent pour afficher le texte suivant "Bonjour, on est le [Jour], [Mois], [Annee] et il est [Heure]:[Minute]:[Second]"
-2. Commit avec le message "TD02: Afficher la date et l'heure du jour"
-3. Modifier le footer pour y afficher également l'année, au format "© [Annee] - [Prenom].[Nom], Tous droits réservés."
-4. Commit avec le message "TD02 : Afficher l'année dans le Footer"
-5. Push
+## Gestion des issues
+> Préfixez le nom de vos issues par OBL - [Title] pour les tâches obligatoires et par OPT - [Title] pour les tâches optionnelles
 
-## TD03 : Utiliser les propos 
-1. Considérer les données du fichier data.json
-2. Créer une fonction permettant de tirer alléatoirement un item de la liste
-3. Créer un composant permettant d'afficher un élément du tableau.
->> Libre à vous de définir le style et la disposition des éléments (vous pouvez inclure des librairies css externes)
-4. Commit avec le message "TD03 : Afficher les détails d'une note"
-5. Push
+- Etape 0 : Créer des issues dans votre repository Github correspondant aux différentes tâches à effectuer
+- Etape 1 : Repartir les actions entre les différents membres du groupe, c'est-à-dire assigner chaque issue à un des membres du groupe
 
-## TD04 : Gestion d'événements 
-1. Ajouter un menu en haut à gauche de votre application
-2. Considérer les éléments suivants (Notes, Etudiants, Matières, A propos) 
-3. Afficher une alerte contenu le text de l’élément cliqué
-4. Commit avec le message “Add menu”
-5. Push
-
-# Session 02 : Gestion des listes dynamiques
-## Objectifs de la session : 
-- Manipuler des listes d'objets
-- Utiliser de tableaux
-- Gestion d'événements
-- Utilisation de librairies (eg. material ui)
-- Gestion dynamique de contenu
-
-## Etape 1: Menu dynamique
-- Modifier le composant du Menu pour utiliser une liste afin d'éviter la répétition de codes
-- Faire en sorte que l'item selectionné dans le menu soit actif
-- Créer un composent dédié pour chaque item du menu et afficher le bon composant en fonction du menu selectionné.
-> Pour l'instant, afficher simplement un text avec le nom du menu dans le contenu de chaque composant, on les complètera dans les étapes suivantes
-- Commit avec le messaage "TD04 : Gestion de menu dynamique"
-
-## Etape 2: Gestion de données des composants 
-Dans cette section, vous allez gérer le contenu des composants liés au menu en utilisant des liste d'objects statiques. Pour cela, récupérer les fichiers de données (notes.json, students.json, class.json et teachers.json) et importez les dans un dossier data de votre projet. 
-
-> Attention, cette étape contient plusieurs tâches, une par menu 
-
-1. Mettre à jour les dépendances du projet en y intégrant les libraries material ui [https://mui.com/material-ui/getting-started/installation/]
-2. Se familliariser avec les composants Table [https://mui.com/material-ui/react-table/] -- Commencer par le Basic Table pour l'instant
-3. Utiliser les fichiers de données pour remplir le contenu des différents composants en utilisant des tableaux
-4. Commmiter avec le message "TD04: Remplir le contenu du composant [XXX]"
-5. Push
-> Répéter les étapes 1 à 5 pour tous les composants
-
-
-
-
-
+## Mise en place d'une convention pour le nommage des fichiers/dossiers, variables etc...
+- Etape 0 : Etablir les conventions de nommages, styles et mécanismes souhaités pour la gestion des formulaires
+> Bien s'assurer que les conventions de nommages sont respectées lors de la révision des PRs
+ 
+## Mécanisme de gestion d'issues
+> Chaque membre du groupe répète l'ensemble de ces actions pour chaque issue qui lui est affecté
+1. Un créer une branche à partir de la page de détail de l'issue
+2. Cloner la branche sur son ordinateur local
+3. Développer la fonctionnalité liée à l'issue
+4. Faire une PR en ajoutant les autres membres du groupe en reviewers
+5. Une fois la PR validée, un des membres du groupe merge la branche dans
+6. Tous les autres membres du groupe s'alignent sur master
  
