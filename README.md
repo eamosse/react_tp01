@@ -35,7 +35,7 @@ Dans cette section, vous allez ajouter des opérations d'éditions sur les donn�
 - Etape 1 : Repartir les actions entre les différents membres du groupe, c'est-à-dire assigner chaque issue à un des membres du groupe
 
 ## Mise en place d'une convention pour le nommage des fichiers/dossiers, variables etc...
-- Etape 0 : Etablir les conventions de nommages, styles et mécanismes souhaités pour la gestion des formulaires
+- Etablir les conventions de nommages, styles et mécanismes souhaités pour la gestion des formulaires
 > Bien s'assurer que les conventions de nommages sont respectées lors de la révision des PRs
  
 ## Mécanisme de gestion d'issues
