@@ -6,7 +6,7 @@ Vous appliquerez également les **bonnes pratiques de travail collaboratif** en 
 ---
 
 ## Partie 0 – Configuration du projet
-
+> A faire en peer-coding
 ### 0.1 Mise en place de la base de code
 
 - Choisir **un de vos projets React réalisés lors des TD précédents** comme base de code.
@@ -30,10 +30,7 @@ Vous appliquerez également les **bonnes pratiques de travail collaboratif** en 
 
 ### 0.2 Renseigner les membres du groupe
 
-- Créer un fichier `CONTRIBUTORS.md` à la racine du projet.
-- Ajouter une section **Contributors** contenant la liste des membres du groupe.
-
-Exemple :
+- Modifier le fichier `README.md` pour y ajouter une section **Contributors** contenant la liste des membres du groupe.
 
 ```md
 ## Contributors
