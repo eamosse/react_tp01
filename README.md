@@ -116,6 +116,7 @@ Développez les fonctionnalités suivantes :
 - classement des étudiants
 
 📁 Export des données au format CSV
+
 📄 Génération de bulletins de notes pour un étudiant (format PDF)
 
 ---
