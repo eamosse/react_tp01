@@ -1,60 +1,122 @@
-# Gestion de formulaires et d'édition de données avec React
-Dans ce TP, vous allez travailler avec React et les mécanismes d'édition de données avec React. 
-Vous allez également utiliser la gestion des issues dans Github et les bonnes pratiques du travail collaboratif en utilisant le gestionnaire de version Git.
+# TP – Gestion de formulaires et édition de données avec React
 
-## Partie 0 : Configuration
+Dans ce TP, vous allez approfondir l’utilisation de **React** à travers la mise en place de mécanismes d’**édition de données** (CRUD).  
+Vous appliquerez également les **bonnes pratiques de travail collaboratif** en utilisant **Git** et la **gestion des issues GitHub**.
 
-### Mise en place de la base du code
-- Choisir un de vos projets (cf. TDs précédents) comme base de code
-- Une fois sélectionné, copier les fichiers du projet React (sans le cache .git ou le README du précédent TD) et coller les dans ce dossier
-  > Attention, faire en sorte que vos fichiers soient à la racine de ce repository
-- S'assurer que le projet fonctionne correctement
-  > Vous pouvez reprendre des fonctionnalités intéressantes dans chacun de vos projets
+---
 
-### Renseigner les membres du groupe
-- Ajouter un fichier CONTRIBUTORS.md à la racine du dossier, puis y ajouter une section Contributors dans laquelle vous spécifierez le nom des membres du groupe.
-  > Utiliser les bullets points afin de renseigner un étudiant par ligne, l'ordre d'apparition des noms n'a pas d'importance
+## Partie 0 – Configuration du projet
 
-### Faire un premier pull request
-- Commiter et pusher les derniers changements
-- Faire une Pull Request (PR) et demander aux autres membres de réviser, valider puis merger
-- Les autres membres du groupe pull le repository
+### 0.1 Mise en place de la base de code
 
-## Partie 1: Edition de données 
-Dans cette section, vous allez ajouter des opérations d'éditions sur les données de votre application.
+- Choisir **un de vos projets React réalisés lors des TD précédents** comme base de code.
+- Copier les fichiers du projet React sélectionné **sans inclure** :
+  - le dossier `.git`
+  - le `README.md` du précédent TD
+- Coller les fichiers dans ce nouveau repository.
+- Copiez également les sources du projet Node (l'API) dans un sous dossier de ce repository
+- Bien mettre à jour le .gitignore pour ne pas commiter les fichiers non nécessaires (eg. node_modules)
 
-### Fonctionnalités obligatoires
-- Ajouter/Editer/Supprimer un étudiant
-- Ajouter/Editer/Supprimer un cours
-- Ajouter/Editer/Supprimer une note
+> ⚠️ **Attention** : les fichiers du projet doivent se trouver **à la racine** du repository.
 
-### Fonctionalités supplémentaires
-- Developper au moins une des fonctionnalités suivantes.
-> Vous pouvez en ajouter d'autres, cela vous permettra de gagner des points bonus
-- Module statistiques (notes moyennes, nombre d'étudiants, moyennes par cours, classement des étudiants, ...)
-- Télécharger les données en csv
-- Génération de bulletins d'un étudiant
-- Contrôle de sécurité (inventer une règle quelconque pour que toute le monde ne puisse pas éditer certaines données par exemple)
+- Vérifier que l’application :
+  - s’installe correctement
+  - démarre sans erreur
+  - fonctionne comme attendu
 
-## Gestion des issues
-Utiliser l'outil de gestion des issues de Github pour gérer les tâches liées à votre projet. 
+> 💡 Vous pouvez reprendre et combiner des fonctionnalités intéressantes issues de plusieurs de vos anciens projets.
 
-- Etape 0 : Créer des issues dans votre repository Github correspondant aux différentes tâches à effectuer
-  > Préfixez le nom de vos issues par OBL - [Title] pour les tâches obligatoires et par OPT - [Title] pour les tâches optionnelles
-- Etape 1 : Repartir les actions entre les différents membres du groupe, c'est-à-dire assigner chaque issue à un des membres du groupe
+---
 
-### Mécanisme de gestion d'issues
-> Chaque membre du groupe répète l'ensemble de ces actions pour chaque issue qui lui est affecté
-1. Créer une branche à partir de la page de détail de l'issue (sur Guthub)
-2. Cloner la branche sur son ordinateur
-3. Développer la fonctionnalité liée et la tester
-4. Faire une PR en ajoutant les autres membres du groupe en reviewers
-5. Une fois la PR validée, un des membres du groupe merge la branche
-6. Tous les autres membres du groupe s'alignent sur master
+### 0.2 Renseigner les membres du groupe
 
-## Mise en place d'une convention de nommage des fichiers/dossiers, variables etc...
-- Etablir les conventions de nommages, styles et mécanismes souhaités pour la gestion des fichiers du projet
-> Bien s'assurer que les conventions de nommages soient respectées lors de la révision des PRs
+- Créer un fichier `CONTRIBUTORS.md` à la racine du projet.
+- Ajouter une section **Contributors** contenant la liste des membres du groupe.
 
+Exemple :
 
- 
+```md
+## Contributors
+- Nom Prénom
+- Nom Prénom
+- Nom Prénom
+```
+> L'ordre des noms n'a pas d'importance
+---
+
+### 0.3 Première Pull Request
+
+- Commiter et pusher l’état initial du projet.
+- Créer une Pull Request (PR).
+- Demander aux autres membres du groupe de :
+- relire le code
+- valider la PR
+- merger la PR
+
+> Une fois la PR mergée, tous les membres du groupe doivent puller le repository.
+---
+
+### 0.4 Gestion des issues GitHub
+Vous devez utiliser l’outil Issues de GitHub pour organiser le travail du groupe.
+
+#### 0.4.1 Création des issues
+- Créer une issue par tâche à réaliser.
+- Assigner chaque issue à un membre du groupe.
+- Chaque membre est responsable des issues qui lui sont attribuées.
+
+#### 0.4.2 Cycle de vie d’une issue
+
+- Chaque membre du groupe doit suivre ces étapes pour chaque issue qui lui est assignée :
+- Créer une branche depuis la page de l’issue sur GitHub
+- Cloner la branche en local
+- Développer la fonctionnalité et la tester
+- Créer une Pull Request en ajoutant les autres membres du groupe comme reviewers
+- Une fois la PR validée, merger la branche
+
+> Tous les autres membres du groupe doivent se réaligner sur la branche main (ou master)
+
+---
+
+### 0.5 Conventions de nommage et bonnes pratiques
+
+Définir des conventions communes pour :
+- le nommage des fichiers et dossiers
+- les variables
+- les composants React
+- la structure du projet
+
+S’assurer que ces conventions sont respectées lors des revues de Pull Requests
+
+✅ Le respect des conventions fera partie des critères d’évaluation.
+
+---
+
+## Partie 1 – Édition de données
+
+Dans cette partie, vous allez implémenter les opérations d’édition sur les données de votre application.
+
+### 1.1 Fonctionnalités obligatoires
+Votre application doit permettre de :
+- Ajouter / Éditer / Supprimer un étudiant
+- Ajouter / Éditer / Supprimer un cours
+- Ajouter / Éditer / Supprimer une note
+
+> Chaque opération doit être accessible via une interface utilisateur claire (formulaires, boutons, confirmations, etc.).
+
+---
+
+### 1.2 Fonctionnalités supplémentaires
+
+Développez les fonctionnalités suivantes :
+
+📊 Module de statistiques :
+- moyenne des notes
+- nombre d’étudiants
+- moyennes par cours
+- classement des étudiants
+
+📁 Export des données au format CSV
+📄 Génération de bulletins de notes pour un étudiant (format PDF)
+
+---
+
